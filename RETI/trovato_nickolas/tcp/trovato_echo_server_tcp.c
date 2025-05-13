@@ -123,7 +123,7 @@ int main(int argc, char **argv)
         /* invio sul socket la stringa */
         int byte_sent = socket_send(connection_fd, buf); 
 
-        printf("Inviato %d bytes con successo\n", byte_sent);
+        printf("Inviato %d bytes con successo %s\n", byte_sent,buf);
 
         /* chiudo la connessione con il client */
 
