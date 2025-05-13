@@ -108,7 +108,7 @@ int main(int argc, char **argv)
     printf("Inviato %d bytes con successo\n", byte_sent);
     
     msg_size = socket_receive(socket_fd, buf);
-    printf("Ricevuto %d bytes con successo\n", msg_size);
+    printf("Ricevuto %d bytes con successo %s\n", msg_size,buf);
     close(socket_fd);   
 
 
